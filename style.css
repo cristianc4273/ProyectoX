@@ -1,11 +1,22 @@
 .imgRedonda {
-    width:35px;
-    height:35px;
-    border-radius:150px;
+    width: 70px;
+    height: 40px;
+    border-radius: 150px;
 }
+
 #cropped {
-    
-    height: 500px; 
+
+    height: 500px;
     overflow: hidden;
-    
-    }
+
+}
+
+#invertir-color {
+    filter: invert(100%);
+
+}
+
+.color_Black{
+    color: black;
+    font-weight: bold;
+}
