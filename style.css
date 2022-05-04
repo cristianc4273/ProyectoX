@@ -20,3 +20,12 @@
     color: black;
     font-weight: bold;
 }
+#center{
+    margin: 0 auto;
+}
+#biselado {
+	background: #ffffff;  /* Fondo, debe ser más claro que el borde */
+	border: 15px outset #727272;  /* Grosor del Borde */  /* Color del Borde */
+	text-align: center;  /* Alineación del texto */
+	text-shadow: -1px -1px rgba(0,0,0,.2);
+}
