@@ -34,3 +34,11 @@
     height: 800px;
     overflow: hidden;
 }
+
+
+.fond_img{
+    background-image: url("img/fondo.jpg");
+    height: 800px;
+    overflow: hidden;
+}
+
