@@ -18,7 +18,7 @@
 
 <body>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
           <div class="container-fluid">
             <a class="navbar-brand" href="../index.html"> <img id="invertir-color" src="../img/logo final.png" alt="logo de la empresa" class='imgRedonda'>
               ProyectoX</a>
@@ -52,9 +52,64 @@
             </div>
           </div>
         </nav>
+<!---->
+<div class="row">
+    <div class="col-md-12">
+        <h3>
+            cuentanos tu experiencia en proyectoX
+        </h3>
+    </div>
+</div>
+<div><br><br><br></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-7 mt-4">
+                    <div id="saludos" style="display: block;">
 
-        <!---->
+                    </div>
+                </div>
+                <div class="col-md-5 mt-4 ">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Nombre</h5>
+                                    <!--Aquí va el formulario-->
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">
+                                                Nombre
+                                            </label>
+                                            <input type="text" class="form-control" id="nombre" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">
+                                                Comentarios
+                                            </label>
+                                            <textarea id="texto_saludo" cols="30" rows="10"
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <br>
+                                            <input type="submit" value="Registrar" class="btn btn-primary"
+                                                runat="server" onclick="registrarSaludo()"
+                                                id="submitButton" />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>    
 
+<!---->
         <footer class="text-center text-lg-start bg-dark text-muted">
             <!-- Section: Social media -->
             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -142,7 +197,7 @@
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
-        
+            <script src="../js/empleo.js"></script>
           <!-- Option 2: Separate Popper and Bootstrap JS -->
           <!--
             <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

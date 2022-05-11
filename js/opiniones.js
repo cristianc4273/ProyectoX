@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Creando/Consultado el array con datos 
     // a partir de lo que exista en localStorage
     var array = [];
-    if (localStorage.getItem("arrayOpinion") == null) {
+    if (localStorage.getItem("arraySaludos") == null) {
         array = [];
-        localStorage.setItem("arrayOpinion", JSON.stringify(array));
+        localStorage.setItem("arraySaludos", JSON.stringify(array));
     } else {
-        array = JSON.parse(localStorage.getItem("arrayOpinion"));
+        array = JSON.parse(localStorage.getItem("arraySaludos"));
     }
 
     // Poblando el div que muestra los saludos
-    var listadoSaludos = JSON.parse(localStorage.getItem("arrayOpinion"));
+    var listadoSaludos = JSON.parse(localStorage.getItem("arraySaludos"));
     var divSaludos = document.getElementById("saludos");
     listadoSaludos.forEach(element => {
         divSaludos.innerHTML = divSaludos.innerHTML + '<div class="card"><div class="card-body"><h5 class="card-title">' + element["nombre"] + ' </h5><p>' + element["saludo"] + '</p></div></div>';
@@ -29,18 +29,18 @@ function registrarSaludo() {
     //Creando/Consultado el array con datos 
     // a partir de lo que exista en localStorage
     var array = [];
-    if (localStorage.getItem("arrayOpinion") == null) {
+    if (localStorage.getItem("arraySaludos") == null) {
         array = [];
-        localStorage.setItem("arrayOpinion", JSON.stringify(array));
+        localStorage.setItem("arraySaludos", JSON.stringify(array));
     } else {
-        array = JSON.parse(localStorage.getItem("arrayOpinion"));
+        array = JSON.parse(localStorage.getItem("arraySaludos"));
     }
 
     // Agregando un nuevo saludo al array
     array.push({ "saludo": texto.value, "nombre": nombre.value });
 
     // Guardando en el localStorage el nuevo array
-    localStorage.setItem("arrayOpinion", JSON.stringify(array));
+    localStorage.setItem("arraySaludos", JSON.stringify(array));
 
     // Recuperando el array de saludos del localStorage
     // para volverlo a mostrar
