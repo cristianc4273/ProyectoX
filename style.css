@@ -42,3 +42,16 @@
     overflow: hidden;
 }
 
+
+.fond_gif{
+    height: 700px;
+    overflow: hidden;
+}
+.tamaño_modal{
+    height: 350px;
+    width: 520px;
+}
+.tamaño_equipo{
+    height: 250px;
+    width: 250px;
+}
